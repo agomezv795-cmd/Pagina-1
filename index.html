@@ -8,7 +8,7 @@ a<!DOCTYPE html>
 
 </head>
 <body>
-    <header>
+    <header class="header">
         <a href="index.html" class="logo" >Mi sitio</a>
         <button class="hamburguesa" id ="btnmenu">
             <span></span>
@@ -16,7 +16,7 @@ a<!DOCTYPE html>
             <span></span>
         </button>
 
-        <nav>
+        <nav class="menu">
             <ul>
                 <li><a href="index.html">inicio</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
@@ -27,20 +27,59 @@ a<!DOCTYPE html>
     </header>
 
     <main>
-        <section class="portada">
+        <section class="portada contenedor">
             <h1>Lavacar de autos a domicilio</h1>
             <p>Dejamos su auto como nuevo sin que tenga que salir de casa</p>
             <a href="contacto.html" class="btn">Reservar</a>
         </section>
-        <section class="servicio">
+        <section class="servicio contenedor">
             <h2>Servicios</h2>
-            <ul>
-                <li>Lavado</li>
-                <li>Pulido</li>
-                <li>Encerado</li>
-            </ul>
+            <div class="cards">
+                <article class="tarjeta">
+                <img src="img/servicio-1.jpg" alt="Servicio 1">
+                <h3>Título</h3>
+                <p>Descripción breve.</p>
+                <a href="#" class="boton">Ver más</a>
+                </article>
+                <!-- repite el article hasta tener seis tarjetas -->
+                                 <article class="tarjeta">
+                <img src="img/servicio-1.jpg" alt="Servicio 1">
+                <h3>Título</h3>
+                <p>Descripción breve.</p>
+                <a href="#" class="boton">Ver más</a>
+                </article>
+                <!-- repite el article hasta tener seis tarjetas -->
+                                 <article class="tarjeta">
+                <img src="img/servicio-1.jpg" alt="Servicio 1">
+                <h3>Título</h3>
+                <p>Descripción breve.</p>
+                <a href="#" class="boton">Ver más</a>
+                </article>
+                <!-- repite el article hasta tener seis tarjetas -->
+            </div>
         </section>
-        <section class="galeria">
+        
+        <section class="preguntas contenedor">
+            <h2>Preguntas frecuentes</h2>
+                <div class="accordion">
+                    <div class="item">
+                        <button class="titulo">¿Pregunta uno?</button>
+                        <div class="contenido"><p>Respuesta uno.</p></div>
+                    </div>
+                    <div class="item">
+                        <button class="titulo">¿Pregunta uno?</button>
+                        <div class="contenido"><p>Respuesta uno.</p></div>
+                    </div>
+                    <div class="item">
+                        <button class="titulo">¿Pregunta uno?</button>
+                        <div class="contenido"><p>Respuesta uno.</p></div>
+                </div>
+            <!-- repite .item hasta tener cuatro preguntas -->
+            </div>
+</section>
+
+
+        <section class="galeria contenedor">
             <h2>Galería</h2>
             <p>Algunos de nuestros trabajos</p>
             <img src="./img/img-1.png" alt="Auto1">
@@ -56,7 +95,7 @@ a<!DOCTYPE html>
             </p>
             <p>Teléfono: 2222-2222 - Correo info@misitio.com</p>
         </div>
-        <ul>
+        <ul class="redes">
             <li><a href="https://www.facebook.com/" target="_blank" >Facebook</a></li> 
             <li><a href="https://www.instagram.com/" target="_blank" >Instagram</a></li> 
             
